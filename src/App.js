@@ -1,10 +1,6 @@
-
-import NormalCounter from './components/NormalCounter'
+import NormalCounter from "./components/NormalCounter";
 function App() {
-  return (
-  
-  <NormalCounter />
-  );
+  return <NormalCounter />;
 }
 
 export default App;

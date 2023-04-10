@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import "./counter.css";
+import Counter from "./Counter/Counter";
 
 function NormalCounter() {
   const inputRef = useRef();
@@ -23,19 +23,15 @@ function NormalCounter() {
   };
 
   return (
-    <div className="counter">
-      <h1>Counter App</h1>
-      <div className="count">{count}</div>
-      <div className="buttons">
-        <button onClick={handleIncrement}>+</button>
-        <button onClick={handleDecrement}>-</button>
-        <button onClick={handleReset}>Reset</button>
-      </div>
-      <div className="set">
-        <input type="number" ref={inputRef} />
-        <button onClick={handleSetCount}>Set</button>
-      </div>
-    </div>
+    <Counter
+      inputRef={inputRef}
+      type="useState"
+      count={count}
+      handleIncrement={handleIncrement}
+      handleDecrement={handleDecrement}
+      handleReset={handleReset}
+      handleSetCount={handleSetCount}
+    />
   );
 }
 
