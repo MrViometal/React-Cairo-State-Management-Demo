@@ -1,3 +1,12 @@
+# Installation Guide
+
+1. make sure you have "yarn" installed (you can do that by typing `yarn -v` in the terminal)
+2. run `yarn install` command to install the dependencies.
+3. run `yarn start` to run the local server
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

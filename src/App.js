@@ -5,21 +5,22 @@ import ReduxCounter from "./components/ReduxCounter";
 import { CounterProvider } from "./context/CounterContext";
 import { Provider } from "react-redux";
 import { CounterStore } from "./store/CounterStore";
+import "./app.css";
 
 function App({ mode }) {
-  if (mode === "normal") return <NormalCounter />;
-  if (mode === "context")
-    return (
+  return (
+    <div className="app-container">
+      <NormalCounter />
+
       <CounterProvider>
         <ContextCounter />
       </CounterProvider>
-    );
-  if (mode === "redux")
-    return (
+
       <Provider store={CounterStore}>
         <ReduxCounter />
       </Provider>
-    );
+    </div>
+  );
 }
 
 export default App;
