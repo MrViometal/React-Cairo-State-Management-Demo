@@ -12,7 +12,7 @@ function Counter({
 }) {
   return (
     <div className="counter">
-      <h1>Counter {type}</h1>
+      <h1>Counter ({type})</h1>
       <div className="count">{count}</div>
       <div className="buttons">
         <button onClick={handleIncrement}>+</button>

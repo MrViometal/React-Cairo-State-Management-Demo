@@ -1,6 +1,12 @@
-import NormalCounter from "./components/NormalCounter";
+// import ContextCounter from "./components/ContextCounter";
+import ContextCounter from "./components/ContextCounter";
+import { CounterProvider } from "./context/CounterContext";
 function App() {
-  return <NormalCounter />;
+  return (
+    <CounterProvider>
+      <ContextCounter />
+    </CounterProvider>
+  );
 }
 
 export default App;

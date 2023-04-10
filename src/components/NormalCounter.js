@@ -24,8 +24,8 @@ function NormalCounter() {
 
   return (
     <Counter
-      inputRef={inputRef}
       type="useState"
+      inputRef={inputRef}
       count={count}
       handleIncrement={handleIncrement}
       handleDecrement={handleDecrement}
